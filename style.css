@@ -1,0 +1,131 @@
+:root {
+    --main-color: #808080; /* Abu-abu */
+    --second-color: #d3d3d3; /* Abu-abu terang */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3 {
+    color: #ea3d9c;
+}
+
+footer {
+    padding: 20px;
+    background: var(--second-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Resize profile image to be 1:1 with a maximum size */
+.profile img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Ensures a 1:1 ratio */
+    object-fit: cover;
+    border-radius: 50%; /* Optional, for circular profile */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background: var(--main-color);
+    text-align: center;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+nav {
+    background-color: var(--second-color); /* Changed to light gray */
+    padding: 5px;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Set h2 elements within articles to black color */
+#content article h2 {
+    color: #000000; /* Set to black */
+}
+
+/* Set specific h2 and h3 colors within profile section */
+#t1 h2, #t1 h3 {
+    color: #000000; /* Set to black for "Rahadian Prawira" and "Informasi Lainnya" */
+}
+
+/* Set black color for "Makanan" and "Minuman" headings */
+#wisata h3 {
+    color: #000000; /* Set to black */
+}
+
+header {
+    display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
